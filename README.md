@@ -156,8 +156,8 @@ MAX_FILE_SIZE=50MB       // Maximum document size
 ```javascript
 LLM_TEMPERATURE=0.1      // Response creativity (0-1)
 LLM_MAX_TOKENS=2000      // Maximum response length
-LLM_TOP_K=5             // Top similar chunks to use
-SIMILARITY_THRESHOLD=0.7 // Minimum similarity score
+LLM_TOP_K=7             // Top similar chunks to use
+SIMILARITY_THRESHOLD=0.6 // Minimum similarity score
 ```
 
 ## 📝 Supported Document Types
@@ -196,7 +196,7 @@ npm test
 # Test with sample request
 curl -X POST http://localhost:8000/api/v1/hackrx/run \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer f4709bfa4126e928ebed3f07baca9d6b7e9ae189bca52ba4d2791d5d335b5566" \
+  -H "Authorization: Bearer fe******************************" \
   -d '{
     "documents": "https://example.com/policy.pdf",
     "questions": ["What is covered under this policy?"]
